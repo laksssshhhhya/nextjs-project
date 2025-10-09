@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VideoShare Platform",
+  title: "Dodo - Video Sharing Platform",
   description: "Share and discover amazing videos",
 };
 
