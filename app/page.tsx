@@ -36,7 +36,7 @@ export default async function Home() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <h1 className="text-2xl font-bold text-secondary-900 tracking-wide">
-                VideoShare
+                Dodo
               </h1>
             </div>
             <nav className="flex items-center space-x-4">

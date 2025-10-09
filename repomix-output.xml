@@ -48,6 +48,7 @@ app/api/video/route.ts
 app/components/FileUpload.tsx
 app/components/Providers.tsx
 app/components/VideoGrid.tsx
+app/components/VideoPlayer.tsx
 app/components/VideoUploadSection.tsx
 app/globals.css
 app/layout.tsx
