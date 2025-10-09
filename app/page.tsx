@@ -6,6 +6,28 @@ import VideoUploadSection from './components/VideoUploadSection'
 import VideoGrid from './components/VideoGrid'
 import Link from 'next/link'
 
+
+import {
+  Great_Vibes,
+  Lobster,
+  Cinzel_Decorative,
+  Playfair_Display,
+  Cinzel,
+  Berkshire_Swash,
+  Shrikhand,
+  Rye,
+  Cormorant_Garamond,
+} from "next/font/google";
+const cormorant = Cormorant_Garamond({ subsets: ["latin"], weight: ["700"] });
+const rye = Rye({ subsets: ["latin"], weight: "400" });
+const shrikhand = Shrikhand({ subsets: ["latin"], weight: "400" });
+const berkshire = Berkshire_Swash({ subsets: ["latin"], weight: "400" });
+const cinzel = Cinzel({ subsets: ["latin"], weight: ["600"] });
+const playfair = Playfair_Display({ subsets: ["latin"], weight: ["700"] });
+const cinzelDeco = Cinzel_Decorative({ subsets: ["latin"], weight: ["400"] });
+const lobster = Lobster({ subsets: ["latin"], weight: "400" });
+const vibes = Great_Vibes({ subsets: ["latin"], weight: "400" });
+
 async function getVideos() {
   try {
     await connectToDatabase()
@@ -35,9 +57,9 @@ export default async function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold text-secondary-900 tracking-wide">
-                Dodo
-              </h1>
+              <h1 className={`${cinzelDeco.className} text-5xl text-indigo-300 tracking-wide`}>
+  Dodo
+</h1>
             </div>
             <nav className="flex items-center space-x-4">
               {session ? (
@@ -116,7 +138,7 @@ export default async function Home() {
       <footer className="border-t-2 border-secondary-200 bg-secondary-50 mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-secondary-600">
-            <p>&copy; 2024 VideoShare. Built with Next.js and ImageKit.</p>
+            <p className={`${lobster.className} text-gray-600`}>&copy; built with 🫶: by Lakshya</p>
           </div>
         </div>
       </footer>
